@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TripSplit - Dashboard</title><link rel="stylesheet" th:href="@{/css/style.css}"></head>
+<body data-page="home">
+<header class="topbar"><a class="brand" href="/">TripSplit</a><nav><a href="/trips">Trips</a><a href="/trips/create">Create Trip</a></nav></header>
+<main class="container"><section class="hero"><div><p class="eyebrow">GROUP TRAVEL</p><h1>Track expenses without the confusion.</h1><p>Record shared expenses, see who owes what, and generate a simple settlement.</p><a class="button" href="/trips/create">Create your first trip</a></div></section>
+<section class="stats"><div class="stat-card"><span>Total Trips</span><strong id="totalTrips">0</strong></div><div class="stat-card"><span>Active Trips</span><strong id="activeTrips">0</strong></div><div class="stat-card"><span>Total Expenses</span><strong id="totalExpenses">0</strong></div><div class="stat-card"><span>Total Amount</span><strong id="totalAmount">₹0.00</strong></div></section>
+<section class="panel"><div class="section-heading"><h2>Recent trips</h2><a href="/trips">View all</a></div><div id="recentTrips" class="trip-grid"><p class="muted">Loading trips...</p></div></section></main>
+<script src="/js/app.js"></script></body></html>
